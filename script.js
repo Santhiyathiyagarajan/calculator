@@ -19,3 +19,33 @@ function total() {
         display.value = "Error";
     }
 }
+
+/* Scientific Functions */
+
+function square() {
+    display.value = Math.pow(eval(display.value), 2);
+}
+
+function sqrt() {
+    display.value = Math.sqrt(eval(display.value));
+}
+
+function sin() {
+    display.value = Math.sin(eval(display.value));
+}
+
+function cos() {
+    display.value = Math.cos(eval(display.value));
+}
+
+function tan() {
+    display.value = Math.tan(eval(display.value));
+}
+
+function log() {
+    display.value = Math.log10(eval(display.value));
+}
+
+function ln() {
+    display.value = Math.log(eval(display.value));
+}

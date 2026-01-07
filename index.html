@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stylish Calculator</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,31 +11,52 @@
     <input type="text" class="display" readonly>
 
     <div class="btns">
+        <!-- Row 1 -->
         <button class="op" onclick="clearAll()">AC</button>
         <button class="op" onclick="del()">⌫</button>
-        <button class="op" onclick="add('%')">%</button>
+        <button class="op" onclick="add('(')">(</button>
+        <button class="op" onclick="add(')')">)</button>
+
+        <!-- Row 2 -->
+        <button class="op" onclick="sqrt()">√</button>
+        <button class="op" onclick="square()">x²</button>
+        <button class="op" onclick="add('**')">xʸ</button>
         <button class="op" onclick="add('/')">÷</button>
 
+        <!-- Row 3 -->
+        <button class="op" onclick="sin()">sin</button>
+        <button class="op" onclick="cos()">cos</button>
+        <button class="op" onclick="tan()">tan</button>
+        <button class="op" onclick="add('*')">×</button>
+
+        <!-- Row 4 -->
+        <button class="op" onclick="log()">log</button>
+        <button class="op" onclick="ln()">ln</button>
+        <button class="op" onclick="add(Math.PI)">π</button>
+        <button class="op" onclick="add('-')">−</button>
+
+        <!-- Row 5 -->
         <button onclick="add('7')">7</button>
         <button onclick="add('8')">8</button>
         <button onclick="add('9')">9</button>
-        <button class="op" onclick="add('*')">×</button>
+        <button class="op" onclick="add('+')">+</button>
 
+        <!-- Row 6 -->
         <button onclick="add('4')">4</button>
         <button onclick="add('5')">5</button>
         <button onclick="add('6')">6</button>
-        <button class="op" onclick="add('-')">−</button>
+        <button class="equal" onclick="total()">=</button>
 
+        <!-- Row 7 -->
         <button onclick="add('1')">1</button>
         <button onclick="add('2')">2</button>
         <button onclick="add('3')">3</button>
-        <button class="op" onclick="add('+')">+</button>
+        <button onclick="add(Math.E)">e</button>
 
+        <!-- Row 8 -->
         <button class="zero" onclick="add('0')">0</button>
         <button onclick="add('.')">.</button>
-        <button class="equal" onclick="total()">=</button>
     </div>
-
 </div>
 
 <script src="script.js"></script>
